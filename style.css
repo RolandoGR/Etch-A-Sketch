@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: gainsboro;
+    height: 100vh;
+    margin: 0;
+
+}
+
+
+.title {
+    text-align: center;
+    font-size: 80px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    height: 480px;
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0 ,0.5);
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+}
+.footer {
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
+    background-color: rgb(22, 22, 22);
+    color: gainsboro;
+    min-height:50px;
+    padding-top: 25px;
+}
