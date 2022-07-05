@@ -32,6 +32,11 @@ body {
     width: 60px;
     height: 60px;
 }
+
+.activeSquare {
+    color: rgb(2, 29, 36);
+}
+
 .footer {
     display: flex;
     margin-top: auto;
