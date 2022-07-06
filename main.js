@@ -10,15 +10,16 @@ const title = document.querySelector('.title')
 
 function askSquareQuan() {
     squareQuant = prompt('Introduce the number of squares per line: ')    
-    if ((squareQuant > 100) || (squareQuant < 1 )) {
-        let alert = alert('Please type a number between 1 and 100')
+    while (squareQuant > 100 || squareQuant < 1) {
+        alert('Please type a number between 1 and 100')
         console.log('no pass')
-        // como regresar reiniciar la funcion para volver a preguntar
-        } else {
-            console.log('yes pass')
-            return squareQuant
+        squareQuant = prompt('Introduce the number of squares per line: ')    
         } 
-}
+        console.log('yes pass')
+        return squareQuant
+
+} 
+
 
 function removeGrid(hoveredItems) {
     hoveredItems = document.querySelectorAll('.hovered')
