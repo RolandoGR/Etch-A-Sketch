@@ -2,6 +2,8 @@ let squareQuant = 16;
 const div = document.createElement('div');
 const grid = document.querySelector('.grid');
 const changeGrid = document.querySelector('.changeGrid')
+const resetGrid = document.querySelector('.resetGrid')
+
 const title = document.querySelector('.title')
 /* title.addEventListener('mouseover', () => {
     title.style.background = 'black'
@@ -62,4 +64,9 @@ changeGrid.addEventListener('click', () =>{
     askSquareQuan(); 
     removeGrid();
     makeGrid(squareQuant);
+} )
+
+resetGrid.addEventListener('click', () =>{
+    removeGrid();
+    makeGrid(16);
 } )
