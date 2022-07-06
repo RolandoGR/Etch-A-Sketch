@@ -59,9 +59,15 @@ button:hover {
 .footer {
     display: flex;
     margin-top: auto;
+    align-items: center;
     justify-content: center;
     background-color: rgb(22, 22, 22);
     color: gainsboro;
     min-height:50px;
     padding-top: 25px;
+}
+.githubImg {
+width: 30px;
+height: auto;
+margin-left: 10px;
 }
