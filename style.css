@@ -17,8 +17,23 @@ body {
 .main {
     display: flex;
     justify-content: center;
-
+    align-items: center
 }
+
+.changeGrid {
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 60px;
+    margin: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.changeGrid:hover {
+    background-color: rgb(145, 199, 214);
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -33,9 +48,6 @@ body {
     height: 60px;
 }
 
-.activeSquare {
-    color: rgb(2, 29, 36);
-}
 
 .footer {
     display: flex;

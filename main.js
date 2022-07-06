@@ -19,14 +19,11 @@ function makeGrid (squareQuant) {
     for (let i = 0; i < (squareQuant**2); ++i) {
         grid.appendChild(div.cloneNode())
     }
-
-    /* 
-    */
     };
     
 
-makeGrid(16)
-const hoveredItems = document.querySelectorAll('.hovered')
+makeGrid(16);
+let hoveredItems = document.querySelectorAll('.hovered')
 hoveredItems.forEach( hoveredItem => {
     hoveredItem.addEventListener('mouseover', () => {
         changeBackground(hoveredItem);
